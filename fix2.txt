@@ -1,0 +1,59 @@
+1. git init 
+
+   git branch -m main 
+
+2. (Jag går in i foldern och skapar en ny fil som heter README.md
+
+3. git add README.md
+   git commit -m "Initial commit"
+
+4. git checkout -b feature1
+
+5. Jag la till dog sist i filen som ett fjärde djur och bytte ut moose mot mouse. Sedan skrev jag:
+   git add README.md
+   git commit -m "Add another animal and change to another animal from existing"
+
+6. git checkout main
+   Ändrade moose till mahmut i filen och sedan skrev jag: 
+   git add README.md
+   git commit -m "change moose to mahmut"
+
+7. git checkout main
+   git merge feature1
+   git add README.md
+   git commit -m "Change moose to mouse and add dog"
+
+8. git checkout dfc9 (Dom första 4 karaktärerna i hashkoden på den senaste merge commit)
+   git tag extinct
+
+9. git checkout main
+   git reset --hard 8889 (Dom första 4 karaktärerna i hashkoden på den näst senaste commit i main branch)
+
+10.git checkout main
+   git branch feature2
+
+11.Jag tryckte på filen README.md och ändrade så att djurens namn börjar med stor bokstav sedan 
+skrev jag:
+   git add README.md 
+   git commit -m"Change the animal names to begin with capital letter"
+
+12. git checkout feature2
+    Går in i foldern och skapar en fil vid namn fix1.txt och sedan skriver jag:
+    git add fix1.txt
+    git commit -m"Add file named fix1.txt"
+
+    Går in i foldern och skapar en fil vid namn fix2.txt och sedan skriver jag:
+    git add fix2.txt
+    git commit -m"Add file named fix2.txt"
+
+13. git checkout main. Jag ser nu att dom filerna är borta i foldern. 
+
+14. git cherry-pick 751eac1a3cff778e35ea3048bd777d13d2356310(hashkoden till den comitten som har lagt till filen fix2.txt).
+
+15. Jag tryckte på fix2.txt filen och kopierade hela texten som jag har i detta dokument till den filen.
+
+16. Jag skapade ett repistory på github och sedan skriver jag: 
+     git remote add origin https://github.com/Ahsanadam/git-laboration1.git
+     git push - u
+     git push --all
+     git push -- tags 
